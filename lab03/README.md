@@ -4,7 +4,7 @@
 
 # Orange
 
-[Notebook](lab03.ows)
+[Orange](lab03.ows)
 
 # Imagem
  ![Imagem](images/imagem.png)
