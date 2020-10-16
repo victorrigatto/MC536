@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="CSV File Import" position="(150, 150)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="Parques" version="" />
+		<node id="1" name="CSV File Import" position="(148.0, 299.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="Especies" version="" />
+		<node id="2" name="Data Table" position="(317.0, 83.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Mostra Parques" version="" />
+		<node id="3" name="Select Columns" position="(317.0, 194.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Seleciona Nome e Estado" version="" />
+		<node id="4" name="Data Table" position="(313.0, 376.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Mostra Especies" version="" />
+		<node id="5" name="Data Table" position="(432.0, 126.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+		<node id="6" name="Merge Data" position="(459.0, 283.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owmergedata.OWMergeData" title="Merge Data" version="" />
+		<node id="7" name="Select Columns" position="(593.0, 357.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Seleciona Especies e Parques" version="" />
+		<node id="8" name="Distributions" position="(709.0, 357.0)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" title="Mostra Especies por Parque" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="3" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="2" sink_channel="Data" sink_node_id="4" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="3" sink_channel="Data" sink_node_id="5" source_channel="Data" source_node_id="3" />
+		<link enabled="true" id="4" sink_channel="Data" sink_node_id="6" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="5" sink_channel="Extra Data" sink_node_id="6" source_channel="Data" source_node_id="3" />
+		<link enabled="true" id="6" sink_channel="Data" sink_node_id="7" source_channel="Data" source_node_id="6" />
+		<link enabled="true" id="7" sink_channel="Data" sink_node_id="8" source_channel="Data" source_node_id="7" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'_session_items': [('C:/Users/rigat/Downloads/Programming/parks.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 6, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('C:/Users/rigat/Downloads/parks.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 6, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/Users/rigat/Downloads/Programming', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x1c\x00\x00\x00\xb0\x00\x00\x039\x00\x00\x02\n\x00\x00\x02\x1d\x00\x00\x00\xcf\x00\x00\x038\x00\x00\x02\t\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x02\x1d\x00\x00\x00\xcf\x00\x00\x038\x00\x00\x02\t', '__version__': 1}</properties>
+		<properties format="literal" node_id="1">{'_session_items': [('C:/Users/rigat/Downloads/Programming/species.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Auto'}, {'start': 1, 'stop': 2, 'value': 'Categorical'}, {'start': 2, 'stop': 14, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('C:/Users/rigat/Downloads/Programming/parks.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 6, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/Users/rigat/Downloads/Programming', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x1d\x00\x00\x00\xcf\x00\x00\x038\x00\x00\x02\t\x00\x00\x02\x1d\x00\x00\x00\xcf\x00\x00\x038\x00\x00\x02\t\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x02\x1d\x00\x00\x00\xcf\x00\x00\x038\x00\x00\x02\t', '__version__': 1}</properties>
+		<properties format="literal" node_id="2">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': None, 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 1}</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBMAAABz
+YXZlZFdpZGdldEdlb21ldHJ5cQNDQgHZ0MsAAwAAAAABfwAAAEAAAAPWAAAClwAAAX8AAABAAAAD
+1gAAApcAAAAAAAAAAAVWAAABfwAAAEAAAAPWAAACl3EEWBIAAAB1c2VfaW5wdXRfZmVhdHVyZXNx
+BYlYCwAAAF9fdmVyc2lvbl9fcQZLAVgQAAAAY29udGV4dF9zZXR0aW5nc3EHXXEIY29yYW5nZXdp
+ZGdldC5zZXR0aW5ncwpDb250ZXh0CnEJKYFxCn1xCyhYBgAAAHZhbHVlc3EMfXENKFgRAAAAZG9t
+YWluX3JvbGVfaGludHNxDn1xDyhYCQAAAFBhcmsgQ29kZXEQSwOGcRFYCQAAAGF2YWlsYWJsZXES
+SwCGcRNYCAAAAExhdGl0dWRlcRRLAoZxFWgSSwGGcRZYCQAAAExvbmdpdHVkZXEXSwKGcRhoEksC
+hnEZWAUAAABBY3Jlc3EaSwKGcRtoEksDhnEcWAkAAABQYXJrIE5hbWVxHUsDhnEeWAQAAABtZXRh
+cR9LAIZxIFgFAAAAU3RhdGVxIUsDhnEiaB9LAYZxI3VK/v///4ZxJGgGSwF1WAoAAABhdHRyaWJ1
+dGVzcSV9cSYoaBpLAmgUSwJoF0sCdVgFAAAAbWV0YXNxJ31xKChoEEsDaB1LA2ghSwN1dWJhdS4=
+</properties>
+		<properties format="literal" node_id="4">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': None, 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 1}</properties>
+		<properties format="literal" node_id="5">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x1a\x00\x00\x00S\x00\x00\x04;\x00\x00\x02f\x00\x00\x01\x1b\x00\x00\x00r\x00\x00\x04:\x00\x00\x02e\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x01\x1b\x00\x00\x00r\x00\x00\x04:\x00\x00\x02e', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 1}</properties>
+		<properties format="literal" node_id="6">{'auto_apply': True, 'controlAreaVisible': True, 'merging': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\n\x00\x00\x00\xf9\x00\x00\x03\x8d\x00\x00\x01\xdf\x00\x00\x02\n\x00\x00\x00\xf9\x00\x00\x03\x8d\x00\x00\x01\xdf\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x02\n\x00\x00\x00\xf9\x00\x00\x03\x8d\x00\x00\x01\xdf', '__version__': 2, 'context_settings': []}</properties>
+		<properties format="pickle" node_id="7">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBMAAABz
+YXZlZFdpZGdldEdlb21ldHJ5cQNDQgHZ0MsAAwAAAAABfgAAACEAAAPXAAACmAAAAX8AAABAAAAD
+1gAAApcAAAAAAAAAAAVWAAABfwAAAEAAAAPWAAACl3EEWBIAAAB1c2VfaW5wdXRfZmVhdHVyZXNx
+BYlYCwAAAF9fdmVyc2lvbl9fcQZLAVgQAAAAY29udGV4dF9zZXR0aW5nc3EHXXEIY29yYW5nZXdp
+ZGdldC5zZXR0aW5ncwpDb250ZXh0CnEJKYFxCn1xCyhYBgAAAHZhbHVlc3EMfXENKFgRAAAAZG9t
+YWluX3JvbGVfaGludHNxDn1xDyhYCgAAAE5hdGl2ZW5lc3NxEEsBhnERWAkAAABhdmFpbGFibGVx
+EksAhnETWAgAAABDYXRlZ29yeXEUSwGGcRVoEksBhnEWWA0AAABSZWNvcmQgU3RhdHVzcRdLAYZx
+GGgSSwKGcRlYCgAAAE9jY3VycmVuY2VxGksBhnEbaBJLA4ZxHFgLAAAAU2Vhc29uYWxpdHlxHUsB
+hnEeaBJLBIZxH1gLAAAAVW5uYW1lZDogMTNxIEsBhnEhaBJLBYZxIlgTAAAAQ29uc2VydmF0aW9u
+IFN0YXR1c3EjSwGGcSRoEksGhnElWAkAAABBYnVuZGFuY2VxJksBhnEnaBJLB4ZxKFgKAAAAU3Bl
+Y2llcyBJRHEpSwOGcSpoEksIhnErWAUAAABPcmRlcnEsSwOGcS1oEksJhnEuWAYAAABGYW1pbHlx
+L0sDhnEwaBJLCoZxMVgPAAAAU2NpZW50aWZpYyBOYW1lcTJLA4ZxM2gSSwuGcTRYCQAAAFBhcmsg
+TmFtZXE1SwGGcTZYCQAAAGF0dHJpYnV0ZXE3SwCGcThYDAAAAENvbW1vbiBOYW1lc3E5SwOGcTpY
+BAAAAG1ldGFxO0sAhnE8WAUAAABTdGF0ZXE9SwOGcT5oO0sBhnE/dUr+////hnFAaAZLAXVYCgAA
+AGF0dHJpYnV0ZXNxQX1xQihoNUsBaBRLAWgXSwFoGksBaBBLAWgmSwFoHUsBaCNLAWggSwF1WAUA
+AABtZXRhc3FDfXFEKGgpSwNoLEsDaC9LA2gySwNoOUsDaD1LA3V1YmF1Lg==
+</properties>
+		<properties format="pickle" node_id="8">gAN9cQAoWAoAAABhdXRvX2FwcGx5cQGIWBIAAABjb250cm9sQXJlYVZpc2libGVxAohYEAAAAGN1
+bXVsYXRpdmVfZGlzdHJxA4lYEwAAAGZpdHRlZF9kaXN0cmlidXRpb25xBEsAWAkAAABoaWRlX2Jh
+cnNxBYlYDQAAAGtkZV9zbW9vdGhpbmdxBksKWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQdOWAoA
+AABzaG93X3Byb2JzcQiJWA8AAABzdGFja2VkX2NvbHVtbnNxCYlYCwAAAF9fdmVyc2lvbl9fcQpL
+AVgQAAAAY29udGV4dF9zZXR0aW5nc3ELXXEMY29yYW5nZXdpZGdldC5zZXR0aW5ncwpDb250ZXh0
+CnENKYFxDn1xDyhYBgAAAHZhbHVlc3EQfXERKFgEAAAAY3ZhcnESTkr+////hnETWA4AAABudW1i
+ZXJfb2ZfYmluc3EUSwBK/v///4ZxFVgJAAAAc2VsZWN0aW9ucRZjYnVpbHRpbnMKc2V0CnEXXXEY
+hXEZUnEaSv7///+GcRtYAwAAAHZhcnEcWAkAAABQYXJrIE5hbWVxHUtlhnEeaApLAXVYCgAAAGF0
+dHJpYnV0ZXNxH31xIGgdSwFzWAUAAABtZXRhc3EhfXEiKFgMAAAAQ29tbW9uIE5hbWVzcSNLA1gF
+AAAAU3RhdGVxJEsDdXViYXUu
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
