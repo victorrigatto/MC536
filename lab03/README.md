@@ -2,8 +2,7 @@
 * Victor Rigatto
 * 178068
 
-# Notebook
-Repositório:
+# Orange
 
 [Notebook](lab03.ows)
 
